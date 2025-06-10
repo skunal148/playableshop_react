@@ -1,4 +1,4 @@
-export const caseStudiesData = [
+const caseStudies = [
   {
     "id": "truecaller-playable-ad",
     "title": "Truecaller – Guess the Shadow Caller",

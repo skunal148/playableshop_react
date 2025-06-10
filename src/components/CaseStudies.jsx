@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
-import {caseStudiesData} from '../data/caseStudiesData';
+import { caseStudiesData } from '../data/caseStudiesData.js';
 
 const CaseStudies = () => {
   return (
@@ -9,19 +8,18 @@ const CaseStudies = () => {
         <h2>Case Studies</h2>
         <div className="case-grid">
           {caseStudiesData.map((study) => (
-            // Use Link instead of <a> for internal routing
-            <Link
-              to={`/playable/${study.id}`}
+            <a
+              href={`/proxy.html?id=${study.id}`}
               key={study.id}
               className="case-item"
-              target="_blank" // This will open the iframe page in a new tab
+              target="_blank"
               rel="noopener noreferrer"
             >
               <img src={study.thumbnailUrl} alt={study.title} className="case-item-image" />
               <div className="case-item-overlay">
                 <h3 className="case-item-title">{study.title}</h3>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </div>

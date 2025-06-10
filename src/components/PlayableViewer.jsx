@@ -1,7 +1,7 @@
 // src/components/PlayableViewer.jsx
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { caseStudiesData } from '../data/caseStudiesData'; // Make sure this path is correct
+import { useParams } from 'react-router-dom';
+import { caseStudiesData } from '../data/caseStudiesData';
 
 const PlayableViewer = () => {
   // Get the 'id' from the URL (e.g., /playable/1)
@@ -42,7 +42,7 @@ const PlayableViewer = () => {
       <div style={viewerStyles}>
         <div style={headerStyles}>
             <h2>Playable Not Found</h2>
-            <Link to="/" style={linkStyles}>&larr; Back to Home</Link>
+            <a to="/" style={linkStyles}>&larr; Back to Home</a>
         </div>
       </div>
     );
