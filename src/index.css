@@ -65,7 +65,7 @@ section {
         }
         
         h2 {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             margin-bottom: 40px;
             text-align: center;
             color: var(--text-primary);
@@ -688,7 +688,7 @@ section {
             display: block;
             width: 80px;
             height: 3px;
-            background-color: var(--accent-coral);
+            background-color: var(--button);
             margin: 15px auto 0;
         }
         
@@ -711,7 +711,7 @@ section {
             left: 50%;
             width: 80%;
             height: 3px;
-            background-color: var(--accent-teal);
+            background-color: var(--secondary);
             transform: translateX(-50%);
             z-index: 1;
         }
@@ -1035,7 +1035,7 @@ section {
     }
     
     .footer-bottom a {
-        color: var(--secondary);
+        color: var(--button);
         text-decoration: none;
         transition: color 0.2s;
     }
@@ -1368,7 +1368,7 @@ section {
     }
     
     .popup-container {
-        background-color: var(--white);
+        background-color: var(--background);
         color: var(--text-primary);
         border-radius: 16px;
         width: 90%;
@@ -1401,7 +1401,7 @@ section {
         top: 20px;
         right: 20px;
         font-size: 1.5rem;
-        color: var(--text-primary);
+        color: var(--white);
         background: none;
         border: none;
         cursor: pointer;
@@ -1434,7 +1434,7 @@ section {
     .popup-title {
         font-size: 2rem;
         margin-bottom: 30px;
-        color: var(--text-primary);
+        color: var(--white);
         text-align: center;
         position: relative;
         padding-bottom: 15px;
@@ -1456,7 +1456,7 @@ section {
         transform: translateX(-50%);
         width: 60px;
         height: 3px;
-        background-color: var(--accent-coral);
+        background-color: var(--button);
     }
     
     .contact-form .form-group {
@@ -1467,7 +1467,7 @@ section {
         display: block;
         margin-bottom: 10px;
         font-weight: 500;
-        color: var(--text-primary);
+        color: var(--white);
         font-size: 0.95rem;
         letter-spacing: 0.5px;
         text-transform: uppercase;
@@ -1477,8 +1477,8 @@ section {
     .contact-form textarea {
         width: 100%;
         padding: 14px 18px;
-        background-color: var(--black-03);
-        border: 1px solid var(--black-10);
+        background-color: var(--white-20);
+        border:none;
         border-radius: 8px;
         font-family: inherit;
         font-size: 1rem;
@@ -1497,12 +1497,12 @@ section {
     .contact-form select {
         width: 100%;
         padding: 14px 18px;
-        background-color: var(--white);
-        border: 1px solid var(--light-gray);
+        background-color: var(--white-20);
+        border: none;
         border-radius: 8px;
         font-family: inherit;
         font-size: 1rem;
-        color: var(--text-primary);
+        color: #7C8486;
         transition: all 0.3s ease;
         appearance: none;
         background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
@@ -1539,7 +1539,7 @@ section {
     }
     
     .contact-form button {
-        background-color: var(--accent-coral);
+        background-color: var(--button);
         color: var(--white);
         border: none;
         padding: 16px 24px;
@@ -1567,7 +1567,7 @@ section {
     }
     
     .contact-form button:hover {
-        background-color: #e05a45;
+        background-color: var(--button);
         transform: translateY(-2px);
         box-shadow: 0 5px 15px var(--shadow-coral);
     }
@@ -1615,3 +1615,76 @@ section {
         color: #ff3b30;
         display: block;
     }
+
+    /* Add this to your src/index.css file */
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.case-item {
+  background-color: var(--white-05);
+  border: 1px solid var(--white-10);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+}
+
+.case-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--button);
+  box-shadow: 0 10px 30px var(--shadow-dark);
+  background-color: var(--white-07);
+}
+
+.case-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.case-item:hover .case-item-image {
+  transform: scale(1.05);
+}
+
+.case-item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
+  padding: 40px 20px 20px;
+  transition: opacity 0.3s ease;
+}
+
+.case-item-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.case-item-description {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.case-item-cta {
+  font-weight: bold;
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.case-item:hover .case-item-cta {
+  color: var(--white);
+}

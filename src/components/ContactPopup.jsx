@@ -34,9 +34,9 @@ const ContactPopup = ({ isActive, onClose }) => {
             <select id="product" name="product" required>
               <option value="" disabled selected>Select a product</option>
               <option value="Custom Playables">Custom Playables</option>
-              <option value="SnapPlay">SnapPlay</option>
+              {/* <option value="SnapPlay">SnapPlay</option>
               <option value="Reelify">Reelify</option>
-              <option value="Multiple Products">Multiple Products</option>
+              <option value="Multiple Products">Multiple Products</option> */}
             </select>
           </div>
           <div class="form-group">
