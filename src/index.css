@@ -384,7 +384,7 @@ section {
         
         .logo-track {
             display: flex;
-            animation: scroll 30s linear infinite;
+            animation: scroll 40s linear infinite;
             width: max-content;
         }
         
@@ -412,6 +412,8 @@ section {
             flex-shrink: 0;
             transition: all 0.3s ease;
         }
+
+       
         
         .logo-item:hover {
             background-color: rgba(255, 255, 255, 0.15);
@@ -1687,4 +1689,34 @@ section {
 
 .case-item:hover .case-item-cta {
   color: var(--white);
+}
+
+section {
+    padding: 80px 0;
+    border-bottom: 0px solid var(--light-gray);
+    scroll-margin-top: 100px; /* <-- ADD THIS LINE */
+}
+
+/* In src/index.css, inside the media query for mobile */
+
+@media (max-width: 992px) {
+    /* ... other mobile styles ... */
+    
+    section {
+      scroll-margin-top: 80px; /* <-- ADD THIS FOR MOBILE */
+    }
+
+    /* ... other mobile styles ... */
+}
+
+.logo-item img {
+  max-height: 35px; /* Adjusted size slightly for better visuals */
+  max-width: 100px;
+  width: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.logo-item:hover img {
+  opacity: 1;
 }
