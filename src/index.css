@@ -399,8 +399,7 @@ section {
         
         .logo-item {
             min-width: 150px;
-            height: 60px;
-            background-color: rgba(255, 255, 255, 0.1);
+            height: 70px;
             margin: 0 15px;
             display: flex;
             align-items: center;
@@ -408,7 +407,7 @@ section {
             font-weight: bold;
             color: rgba(255, 255, 255, 0.8);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 4px;
+            border:none;
             flex-shrink: 0;
             transition: all 0.3s ease;
         }
@@ -416,7 +415,6 @@ section {
        
         
         .logo-item:hover {
-            background-color: rgba(255, 255, 255, 0.15);
             transform: translateY(-3px);
         }
         
@@ -1710,7 +1708,7 @@ section {
 }
 
 .logo-item img {
-  max-height: 35px; /* Adjusted size slightly for better visuals */
+  max-height: 50px; /* Adjusted size slightly for better visuals */
   max-width: 100px;
   width: 100%;
   object-fit: contain;
