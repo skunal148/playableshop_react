@@ -196,7 +196,11 @@ section {
         }
         
         .hero .btn-secondary:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: transparent;
+            color: var(--button);
+            border: 1px solid var(--button);
+            
+            
         }
         
         .hero-image {
