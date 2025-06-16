@@ -1,19 +1,19 @@
 :root {
-  /* New Color Scheme */
-  --background: #7EAEBC;
-  --secondary: #FFC420;
-  --button: #CA2A46;
-  --text-primary: #000000;
+  /* New Color Scheme - Classic Professional (Blue & Pink) */
+  --background: #F5F5F5; /* Material Grey 100 or a custom light background */
+  --secondary: #f50057; /* Pink A400 */
+  --button: #1976d2; /* Blue 700 */
+  --text-primary: #212121; /* Material Grey 900 */
   --white: #FFFFFF;
 
-  /* Other Colors from original file */
-  --accent-teal: #3AB0A2;
-  --accent-coral: #F2634C;
-  --light-gray: #1a1616;
-  --bg-light-gradient-start: #f8f9fa;
-  --bg-light-gradient-end: #eef1f5;
-  --bg-dark-gradient-start: #2a2f38;
-  --bg-dark-gradient-end: #1e2228;
+  /* Other Colors from original file - adjust as needed for the new theme */
+  --accent-teal: #29b6f6; /* Light Blue 400 */
+  --accent-coral: #f44336; /* Red 500 */
+  --light-gray: #e0e0e0; /* A lighter gray that fits the theme */
+  --bg-light-gradient-start: #e0f2f7; /* Lighter shade of blue for gradients */
+  --bg-light-gradient-end: #bbdefb; /* Another light blue shade */
+  --bg-dark-gradient-start: #424242; /* Darker grey for dark elements */
+  --bg-dark-gradient-end: #212121; /* Even darker grey */
   --white-10: rgba(255, 255, 255, 0.1);
   --white-20: rgba(255, 255, 255, 0.2);
   --white-05: rgba(255, 255, 255, 0.05);
@@ -24,12 +24,12 @@
   --shadow-light: rgba(0, 0, 0, 0.05);
   --shadow-medium: rgba(0, 0, 0, 0.1);
   --shadow-dark: rgba(0, 0, 0, 0.3);
-  --shadow-coral: rgba(242, 99, 76, 0.4);
-  --shadow-coral-light: rgba(242, 99, 76, 0.2);
-  --text-secondary: #555555;
-  --text-light: #666666;
-  --text-success: #3AB0A2;
-  --text-error: #F2634C;
+  --shadow-coral: rgba(245, 0, 87, 0.4); /* Based on secondary color */
+  --shadow-coral-light: rgba(245, 0, 87, 0.2);
+  --text-secondary: #757575; /* Material Grey 600 */
+  --text-light: #9e9e9e; /* Material Grey 500 */
+  --text-success: #4caf50; /* Material Green 500 */
+  --text-error: #f44336; /* Material Red 500 */
 }
 
 * {
@@ -37,6 +37,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.hero-background-video {
+  width: 100%;
+  height: 100%;
+  /* This property is the key: it makes the video cover the area without stretching */
+  object-fit: cover;
 }
 
 body {
@@ -159,7 +166,7 @@ section {
         
         .hero-content h1, 
         .hero-content p {
-            color: var(--white);
+            color: var(--text-primary);
         }
         
         .hero-content h1 span.highlight {
@@ -184,8 +191,8 @@ section {
         
         .hero .btn-secondary {
             background-color: transparent;
-            color: var(--white);
-            border: 1px solid var(--white);
+            color: var(--text-primary);
+            border: 1px solid var(--text-primary);
         }
         
         .hero .btn-secondary:hover {
@@ -503,11 +510,11 @@ section {
         .product-card h3 {
             font-size: 1.6rem;
             margin-bottom: 12px;
-            color: var(--white);
+            color: var(--text-primary);
         }
         
         .product-card p {
-            color: var(--white);
+            color: var(--text-primary);
             margin-bottom: 20px;
             font-size: 1rem;
         }
@@ -526,7 +533,7 @@ section {
         }
         
         .product-preview i {
-            color: var(--white);
+            color: var(--text-primary);
             font-size: 3rem;
             transition: transform 0.3s ease, color 0.3s ease;
         }
@@ -540,7 +547,7 @@ section {
             margin-bottom: 8px;
             position: relative;
             padding-left: 22px;
-            color: var(--white);
+            color: var(--text-primary);
             font-size: 0.95rem;
         }
         
@@ -619,7 +626,7 @@ section {
         }
         
         .case-studies h2 {
-            color: var(--white);
+            color: var(--text-primary);
             position: relative;
         }
         
@@ -740,7 +747,7 @@ section {
             justify-content: center;
             font-size: 1.2rem;
             font-weight: 600;
-            color: white;
+            color: var(--white);
             position: absolute;
             top: -20px;
             left: 20px;
@@ -784,12 +791,12 @@ section {
             font-size: 1.2rem;
             font-weight: 600;
             margin-bottom: 12px;
-            color: var(--white);
+            color: var(--text-primary);
         }
         
         .step-description {
             font-size: 0.9rem;
-            color: var(--white);
+            color: var(--text-primary);
             opacity: 0.8;
         }
         
@@ -892,7 +899,7 @@ section {
     }
     
     nav ul li a {
-        color: var(--white);
+        color: var(--text-primary);
         text-decoration: none;
         font-weight: 500;
         transition: color 0.2s;
@@ -931,13 +938,13 @@ section {
     }
     
     .cta-container h3 {
-        color: var(--white);
+        color: var(--text-primary);
         font-size: 2rem;
         margin-bottom: 20px;
     }
     
     .cta-container p {
-        color: var(--white);
+        color: var(--text-primary);
         font-size: 1.1rem;
         margin-bottom: 30px;
     }
@@ -960,8 +967,8 @@ section {
     }
     
     .cta-section .btn-secondary {
-        border-color: var(--white);
-        color: var(--white);
+        border-color: var(--text-primary);
+        color: var(--text-primary);
     }
     
     .cta-section .btn-secondary:hover {
@@ -983,7 +990,7 @@ section {
     }
     
     .footer-column h4 {
-        color: var(--white);
+        color: var(--text-primary);
         font-size: 1.2rem;
         margin-bottom: 20px;
         position: relative;
@@ -1004,7 +1011,7 @@ section {
     }
 
     .footer-bottom p {
-        color: var(--white);
+        color: var(--text-primary);
     }
     
     .footer-column ul li {

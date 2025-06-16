@@ -14,7 +14,7 @@ const Header = () => {
     <header>
       <div className="container header-container">
         <Link to="/#home" smooth className="logo" onClick={handleMenuClose}>
-          <img src="images/logotransparentbg.png" alt="PlayableShop Logo" />
+          <img src="images/logoTransparentBlack.png" alt="PlayableShop Logo" />
         </Link>
         <button
           className={`mobile-menu-toggle ${isMenuOpen ? 'active' : ''}`}

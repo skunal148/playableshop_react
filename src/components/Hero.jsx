@@ -30,15 +30,16 @@ const Hero = () => {
               <div class="device-screen">
                 <div class="device-content">
                   <video
+                  className= "hero-background-video"
                     width="100%"
                     height="100%"
-                    autoplay
+                    autoPlay
                     loop
                     muted
-                    playsinline
+                    playsInline
                   >
                     <source
-                      src="https://snktcodes.github.io/playables/playableShop/demo.mp4"
+                      src="/demo.mp4"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
