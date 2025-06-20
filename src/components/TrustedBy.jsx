@@ -7,26 +7,15 @@ const logos = [
     { name: 'AlpineFresh', filename: 'AlpineFresh.png' },
     { name: 'Alps', filename: 'Alps.png' },
     { name: 'Happn', filename: 'Happn.png' },
-    { name: 'IceNine_Kills', filename: 'IceNine_Kills.png' },
-    { name: 'Linen Chest', filename: 'Linen Chest.png' },
+    { name: 'IceNine_Kills', filename: 'IceNineKills.png' },
+    { name: 'Linen Chest', filename: 'LinenChest.png' },
     { name: 'mthree', filename: 'mthree.png' },
-    { name: 'portalone', filename: 'portalone.jpeg' },
-    { name: 'Rival Club', filename: 'Rival Club.png' },
+    { name: 'portalone', filename: 'PortalOne.png' },
+    { name: 'Rival Club', filename: 'RivalClub.png' },
     { name: 'Truecaller', filename: 'truecaller.png' },
-    { name: 'upily', filename: 'upily.jpeg' },
+    { name: 'upily', filename: 'upily.png' },
   ];
-const extendedLogos = [
-    { name: 'AlpineFresh', filename: 'AlpineFresh.png' },
-    { name: 'Alps', filename: 'Alps.png' },
-    { name: 'Happn', filename: 'Happn.png' },
-    { name: 'IceNine_Kills', filename: 'IceNine_Kills.png' },
-    { name: 'Linen Chest', filename: 'Linen Chest.png' },
-    { name: 'mthree', filename: 'mthree.png' },
-    { name: 'portalone', filename: 'portalone.jpeg' },
-    { name: 'Rival Club', filename: 'Rival Club.png' },
-    { name: 'Truecaller', filename: 'truecaller.png' },
-    { name: 'upily', filename: 'upily.jpeg' },
-  ];
+
   
   return (
     <section className="trusted-by">
