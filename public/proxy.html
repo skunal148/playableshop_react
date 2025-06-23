@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playable Demo</title>
+  <style>
+    /* Basic styling to make the iframe fill the entire page */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="playable-frame" title="Playable Content"></iframe>
+
+  <script src="/caseStudiesDataforProxy.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      try {
+        // Get the 'id' from the page's URL (e.g., proxy.html?id=1)
+        const params = new URLSearchParams(window.location.search);
+        const studyId = params.get('id');
+
+        if (studyId) {
+          // Find the case study data that matches the id
+          // The 'caseStudies' variable is available here because we loaded the script above
+          const caseStudy = caseStudies.find(study => study.id === studyId);
+
+          if (caseStudy) {
+            // Find the iframe element
+            const iframe = document.getElementById('playable-frame');
+            // Set the iframe's src to the correct playableLink
+            iframe.src = caseStudy.playableUrl;
+            // Update the page title dynamically
+            document.title = caseStudy.title;
+          } else {
+            document.body.innerHTML = '<h1>Case study not found.</h1>';
+          }
+        } else {
+          document.body.innerHTML = '<h1>Invalid ID provided.</h1>';
+        }
+      } catch (e) {
+        document.body.innerHTML = '<h1>Error loading content.</h1>';
+        console.error(e);
+      }
+    });
+  </script>
+</body>
+</html>
