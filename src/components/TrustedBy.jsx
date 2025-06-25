@@ -7,13 +7,18 @@ const logos = [
     { name: 'AlpineFresh', filename: 'AlpineFresh.png' },
     { name: 'HeyCash', filename: 'HeyCash.png' },
     { name: 'Happn', filename: 'Happn.png' },
-    { name: 'Merci', filename: 'Merci.png' },
     { name: 'LinenChest', filename: 'LinenChest.png' },
     { name: 'mthree', filename: 'mthree.png' },
     { name: 'portalone', filename: 'PortalOne.png' },
     { name: 'RivalClub', filename: 'RivalClub.png' },
-    { name: 'Truecaller', filename: 'Truecaller.png' },
+    { name: 'Truecaller', filename: 'truecaller.png' },
     { name: 'upily', filename: 'upily.png' },
+    { name: 'MCM', filename: 'mcm.png' },
+    { name: 'Betway', filename: 'betway.png' },
+    { name: 'Junkyard Tycoon', filename: 'JunkyardTycoon.png' },
+    { name: 'HeyCash', filename: 'HeyCash.png' },
+    { name: 'lotum', filename: 'lotum.png' },
+    { name: 'Splash Learn', filename: 'SplashLearn.png' },
     { name: 'Deca', filename: 'Deca.png' }
   ];
 
