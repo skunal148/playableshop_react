@@ -1,6 +1,6 @@
 import React, { useRef, Suspense, useEffect, useMemo } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, RoundedBox } from '@react-three/drei';
+import { OrbitControls, RoundedBox, Environment } from '@react-three/drei';
 import * as THREE from 'three';
 
 // This component handles the video texture for the screen
@@ -60,6 +60,7 @@ function VideoScreen({ videoSrc }) {
   );
 }
 
+
 // This component assembles the complete phone model
 function PhoneModel({ videoSrc }) {
   return (
@@ -67,16 +68,17 @@ function PhoneModel({ videoSrc }) {
       {/* Phone Body with RoundedBox */}
       <RoundedBox
         args={[2, 4.2, 0.2]} // width, height, depth
-        radius={0.15}         // corner radius
-        smoothness={8}        // subdivision level for rounded corners
+        radius={0.1}         // corner radius
+        smoothness={10}        // subdivision level for rounded corners
       >
         <meshStandardMaterial 
-          color={'#FFFFFF'} 
+          color='#737373'
           roughness={0.5} 
-          metalness={0.5} 
+          metalness={1} 
+          
         />
       </RoundedBox>
-
+    <Environment preset='city' background={false}/>
 
       {/* Screen Component */}
       <Suspense fallback={<meshBasicMaterial color="black" />}>
@@ -90,9 +92,9 @@ function PhoneModel({ videoSrc }) {
 const CustomPhoneModel = ({ videoSrc }) => {
   return (
     <Canvas camera={{ position: [0, 0, 6.5], fov: 45 }}>
-      <ambientLight intensity={1.2} />
-      <pointLight position={[10, 10, 10]} intensity={0.6}/>
-      <directionalLight position={[-5, 5, 5]} intensity={0.5} />
+      <ambientLight intensity={1.5} />
+      <pointLight position={[5, 10, 5]} intensity={0.6}/>
+      <directionalLight position={[0, 5, 5]} intensity={1.5} />
 
       <Suspense fallback={null}>
         <PhoneModel videoSrc={videoSrc} />
