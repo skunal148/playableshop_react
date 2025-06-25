@@ -16,7 +16,7 @@ const Header = () => {
     <header>
       <div className="container header-container">
         <Link to="/#home" smooth className="logo" onClick={handleMenuClose}>
-          <Lottie animationData={logoAnimation} style={{ width: 'auto%', height: '50px' }} />
+          <img src='/images/logotransparentbg.png' alt='logo'></img>
         </Link>
         <button
           className={`mobile-menu-toggle ${isMenuOpen ? 'active' : ''}`}
