@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomPhoneModel from './CustomPhoneModel';
 
 const Hero = () => {
   return (
@@ -24,47 +25,21 @@ const Hero = () => {
             <a href="#solutions" className="btn btn-secondary">Explore Solutions</a>
           </div>
         </div>
-                <div class="hero-image">
-          <div class="device-mockup">
-            <div class="device-frame">
-              <div class="device-screen">
-                <div class="device-content">
-                  <video
-                  className= "hero-background-video"
-                    width="100%"
-                    height="100%"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                  >
-                    <source
-                      src="/demo.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                  <div class="video-overlay">
-                    <div class="play-button">
-                      <i class="fas fa-play"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="hero-image">
+        <CustomPhoneModel videoSrc="/demo.mp4"/>
+          {/* The floating elements are still here */}
+          <div className="floating-elements">
+            <div className="float-element float-1">
+              <i className="fas fa-chart-line"></i>
             </div>
-            <div class="floating-elements">
-              <div class="float-element float-1">
-                <i class="fas fa-chart-line"></i>
-              </div>
-              <div class="float-element float-2">
-                <i class="fas fa-users"></i>
-              </div>
-              <div class="float-element float-3">
-                <i class="fas fa-rocket"></i>
-              </div>
+            <div className="float-element float-2">
+              <i className="fas fa-users"></i>
             </div>
-          </div>
+            <div className="float-element float-3">
+              <i className="fas fa-rocket"></i>
+            </div>
         </div>
+      </div>
       </div>
     </section>
   );
