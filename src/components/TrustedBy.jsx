@@ -16,19 +16,7 @@ const logos = [
     { name: 'upily', filename: 'upily.png' },
     { name: 'Deca', filename: 'Deca.png' }
   ];
-const extendedLogos = [
-    { name: 'AlpineFresh', filename: 'AlpineFresh.png' },
-    { name: 'HeyCash', filename: 'HeyCash.png' },
-    { name: 'Happn', filename: 'Happn.png' },
-    { name: 'Merci', filename: 'Merci.png' },
-    { name: 'LinenChest', filename: 'LinenChest.png' },
-    { name: 'mthree', filename: 'mthree.png' },
-    { name: 'portalone', filename: 'portalone.png' },
-    { name: 'RivalClub', filename: 'RivalClub.png' },
-    { name: 'Truecaller', filename: 'Truecaller.png' },
-    { name: 'upily', filename: 'upily.png' },
-    { name: 'Deca', filename: 'Deca.png' }
-  ];
+
   
   return (
     <section className="trusted-by">
