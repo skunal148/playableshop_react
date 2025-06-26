@@ -66,6 +66,8 @@ const IPhoneModel = ({ videoSrc }) => {
     });
   }, [scene, videoSrc]);
 
+  
+
   return (
     <group
       scale={27}
