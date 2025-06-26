@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
         </div>
         <div class="hero-image">
-        <CustomPhoneModel videoSrc="/demo.mp4"/>
+        <CustomPhoneModel/>
           {/* The floating elements are still here */}
           <div className="floating-elements">
             <div className="float-element float-1">
