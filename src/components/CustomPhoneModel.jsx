@@ -11,7 +11,7 @@ const CustomPhoneModel = () => {
       <directionalLight position={[5, 10, 5]} intensity={1} castShadow />
       <Environment preset="sunset" background={false} />
       <Suspense fallback={null}>
-        <IPhoneModel videoSrc="/videos/demo.mp4"/>
+        <IPhoneModel videoSrc="/videos/demo (1).mp4"/>
       </Suspense>
       <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
     </Canvas>
