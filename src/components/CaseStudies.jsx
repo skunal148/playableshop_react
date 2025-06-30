@@ -3,7 +3,7 @@ import { caseStudiesData } from '../data/caseStudiesData.js';
 
 const CaseStudies = () => {
   return (
-    <section id="case-studies" className="case-studies">
+    <section id="our-work" className="case-studies">
       <div className="container">
         <h2>Our Work</h2>
         <div className="case-grid">

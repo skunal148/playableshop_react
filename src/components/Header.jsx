@@ -35,7 +35,7 @@ const Header = () => {
             {/* Step 2: Replace <a> tags with <Link> and add the 'smooth' prop */}
             <li><Link to="/#home" smooth onClick={handleMenuClose}>Home</Link></li>
             <li><Link to="/#solutions" smooth onClick={handleMenuClose}>Solutions</Link></li>
-            <li><Link to="/#case-studies" smooth onClick={handleMenuClose}>Case Studies</Link></li>
+            <li><Link to="/#our-work" smooth onClick={handleMenuClose}>Our Work</Link></li>
             <li><Link to="/#how-it-works" smooth onClick={handleMenuClose}>How It Works</Link></li>
             <li><Link to="/#get-started" className="nav-cta" smooth onClick={handleMenuClose}>Get Started</Link></li>
           </ul>
