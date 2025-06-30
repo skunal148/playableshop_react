@@ -15,13 +15,6 @@ const Hero = () => {
             actionable insights.
           </p>
           <div className="hero-buttons">
-            <a
-              href="#"
-              className="btn btn-primary contact-trigger"
-              data-form-type="demo"
-            >
-              Request a Demo
-            </a>
             <a href="#solutions" className="btn btn-secondary">Explore Solutions</a>
           </div>
         </div>

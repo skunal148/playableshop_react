@@ -13,6 +13,14 @@ export const caseStudiesData = [
     "thumbnailUrl": "thumbnails/modernmayhem.png",
     "playableUrl": "https://snktcodes.github.io/playables/modern_command_mayhem_v3/"
   },
+
+    {
+    "id": "fashionAR",
+    "title": "Fashion AR – Style & Makeover",
+    "description": "An interactive dress-up playable where players help Amanda get ready for a date night by choosing outfits, unlocking fashion boxes, and selecting her date. Built in Phaser 3 with cinematic transitions, dialogue prompts, and a polished UI. Optimized for Facebook, Google, AppLovin, and Vungle.",
+    "thumbnailUrl": "thumbnails/fashionAR.png",
+    "playableUrl": "https://snktcodes.github.io/playables/portalOneBreakout/"
+  },
   {
     "id": "breakout-playable-ad",
     "title": "Breakout – Classic Arcade Remix",
@@ -34,13 +42,21 @@ export const caseStudiesData = [
     "thumbnailUrl": "thumbnails/dragonVale.png",
     "playableUrl": "https://snktcodes.github.io/dragonPlayableGrow/"
   },
-  {
+
+   {
+    "id": "chickengame",
+    "title": "The Chicken Game – Betway Exclusive",
+    "description": "Why did the chicken cross the road? To dodge traffic, of course! In this hilarious tap-to-move playable, guide the clucky hero through a highway full of speeding cars. Fast reflexes and perfect timing are key. Built for quick engagement and high CTR, this Betway-branded exclusive is optimized for Google, Unity, and Meta Ads.",
+    "thumbnailUrl": "thumbnails/chickengame.png",
+    "playableUrl": "https://snktcodes.github.io/playables/portalOneBreakout/"
+  },
+  /* {
     "id": "hey-cash",
     "title": "HeyCash – Surveys for Rewards",
     "description": "Players answer fun, quick surveys to earn virtual rewards. Built with interactive UI, celebratory animations, and optimized for ad-based lead generation.",
     "thumbnailUrl": "thumbnails/heyCash.png",
     "playableUrl": "https://snktcodes.github.io/builds/playable_HEYCash_/"
-  },
+  }, */
   {
     "id": "happn-playable-ad",
     "title": "Happn – Crush & Chat",
@@ -50,9 +66,9 @@ export const caseStudiesData = [
   },
   {
     "id": "upily-winjokids",
-    "title": "UpiLy – WinjoKids",
+    "title": "Upily Kids – Hygiene Routine",
     "description": "A drag and drop puzzle game.",
-    "thumbnailUrl": "thumbnails/upily-winjokids.png",
+    "thumbnailUrl": "thumbnails/upily-winjokids.jpeg",
     "playableUrl": "https://snktcodes.github.io/playables/upily_winjokids/"
   },
   {
@@ -78,18 +94,18 @@ export const caseStudiesData = [
   }, */
   {
     "id": "match-the-shapes",
-    "title": "Match the Shapes – Colorful Puzzle",
+    "title": "SplashLearn – Shapes Ride",
     "description": "A drag and drop puzzle game.",
-    "thumbnailUrl": "thumbnails/matchTheShapes.png",
+    "thumbnailUrl": "thumbnails/SplashLearn.png",
     "playableUrl": "https://snktcodes.github.io/MatchTheShapes_FB_INSTANT_GAME/"
   },
-  {
+  /* {
     "id": "magic-mart",
     "title": "Magic Mart – Interactive Shopping",
     "description": "A simulation game where users virtually shop and manage a store.",
     "thumbnailUrl": "thumbnails/shop.png",
     "playableUrl": "https://snktcodes.github.io/magicMartPlayable/"
-  },
+  }, */
   {
     "id": "junkyard",
     "title": "Junkyard – Interactive Car Racing",
@@ -106,9 +122,9 @@ export const caseStudiesData = [
   },
   {
     "id": "merigos-merge",
-    "title": "Merigos Merge",
+    "title": "Migros Merge",
     "description": "",
-    "thumbnailUrl": "thumbnails/merigosmerge.png",
+    "thumbnailUrl": "thumbnails/migros_merge.png",
     "playableUrl": "https://snktcodes.github.io/playableADMerigosMerge/"
   }
 ];

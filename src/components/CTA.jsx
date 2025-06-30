@@ -11,9 +11,9 @@ const CTA = ({ onOpenPopup }) => {
             campaigns with data-driven playable ads that convert.
           </p>
           <div className="cta-buttons">
-            <a href="#" className="btn btn-primary" onClick={() => onOpenPopup('demo')}>
+{/*             <a href="#" className="btn btn-primary" onClick={() => onOpenPopup('demo')}>
               Request a Demo
-            </a>
+            </a> */}
             <a href="#" className="btn btn-secondary" onClick={() => onOpenPopup('sales')}>
               Contact Sales
             </a>

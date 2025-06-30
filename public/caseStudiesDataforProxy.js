@@ -14,6 +14,13 @@ const caseStudies = [
     "playableUrl": "https://snktcodes.github.io/playables/portalOneBreakout/"
   },
   {
+    "id": "Fashion AR – Style & Makeover",
+    "title": "Breakout – Classic Arcade Remix",
+    "description": "An interactive dress-up playable where players help Amanda get ready for a date night by choosing outfits, unlocking fashion boxes, and selecting her date. Built in Phaser 3 with cinematic transitions, dialogue prompts, and a polished UI. Optimized for Facebook, Google, AppLovin, and Vungle.",
+    "thumbnailUrl": "thumbnails/fashionAR.png",
+    "playableUrl": "https://snktcodes.github.io/playables/portalOneBreakout/"
+  },
+  {
     "id": "word-blitz",
     "title": "Word Blitz – Swipe to Spell",
     "description": "A fast-paced word puzzle playable where users swipe letters to form words under pressure. Countdown timers and lively animations keep the tension high.",
@@ -45,7 +52,7 @@ const caseStudies = [
     "id": "upily-winjokids",
     "title": "UpiLy – WinjoKids",
     "description": "A drag and drop puzzle game.",
-    "thumbnailUrl": "thumbnails/upily-winjokids.png",
+    "thumbnailUrl": "thumbnails/upily-winjokids.jpeg",
     "playableUrl": "https://snktcodes.github.io/playables/upily_winjokids/"
   },
   {
@@ -101,7 +108,7 @@ const caseStudies = [
     "id": "merigos-merge",
     "title": "Merigos Merge",
     "description": "",
-    "thumbnailUrl": "thumbnails/merigosmerge.png",
+    "thumbnailUrl": "thumbnails/migros_merge.png",
     "playableUrl": "https://snktcodes.github.io/playableADMerigosMerge/"
   },
   {

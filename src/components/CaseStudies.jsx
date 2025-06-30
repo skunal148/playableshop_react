@@ -5,7 +5,7 @@ const CaseStudies = () => {
   return (
     <section id="case-studies" className="case-studies">
       <div className="container">
-        <h2>Case Studies</h2>
+        <h2>Our Work</h2>
         <div className="case-grid">
           {caseStudiesData.map((study) => (
             <a

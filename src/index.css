@@ -106,7 +106,7 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
     text-align: center;
-    color: var(--grey);
+    color: var(--turquoise);
 }
 
 h3 {
@@ -222,17 +222,14 @@ ul li:before {
 }
 
 .hero .btn-secondary {
-    background-color: transparent;
+    background-color: var(--button);
     color: var(--text-primary);
-    border: 1px solid var(--text-primary);
+    
 }
 
 .hero .btn-secondary:hover {
-    background-color: transparent;
-    color: var(--button);
-    border: 1px solid var(--button);
-
-
+    background-color: var(--secondary);
+    color: var(--background);
 }
 
 .hero-image {
@@ -695,7 +692,7 @@ canvas {
 
 
 .case-studies h2 {
-    color: var(--grey);
+    color: var(--turquoise);
     position: relative;
 }
 
@@ -750,7 +747,7 @@ canvas {
     margin-bottom: 70px;
     position: relative;
     z-index: 1;
-    color: var(--grey);
+    color: var(--turquoise);
 }
 
 .how-it-works h2:after {
@@ -988,9 +985,8 @@ nav ul li a:hover {
 }
 
 .nav-cta:hover {
-    background-color: transparent;
-    color: var(--secondary);
-    border: 1px solid var(--secondary);
+    background-color: var(--secondary);
+    color: var(--background);
 }
 
 /* CTA Section Styles */
@@ -1036,12 +1032,13 @@ nav ul li a:hover {
 }
 
 .cta-section .btn-secondary {
-    border-color: var(--text-primary);
+    background-color: var(--button);
     color: var(--text-primary);
 }
 
 .cta-section .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--secondary);
+    color: var(--background);
 }
 
 /* Footer Styles - Enhanced */
@@ -1222,7 +1219,7 @@ footer {
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 992px) {
+@media (max-width: 901px) {
 
     /* Header Mobile Styles */
     .mobile-menu-toggle {
