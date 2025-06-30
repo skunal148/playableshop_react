@@ -39,7 +39,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>
             &copy; 2025 PlayableShop. All rights reserved.
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            <a href="#">   Privacy Policy</a> | <a href="#">Terms of Service</a>
           </p>
         </div>
       </div>
