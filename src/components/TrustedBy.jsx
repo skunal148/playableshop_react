@@ -11,13 +11,13 @@ const logos = [
     { name: 'mthree', filename: 'mthree.png' },
     { name: 'portalone', filename: 'PortalOne.png' },
     { name: 'RivalClub', filename: 'RivalClub.png' },
-    { name: 'Truecaller', filename: 'truecaller.png' },
+    { name: 'Truecaller', filename: 'Truecaller.png' },
     { name: 'upily', filename: 'upily.png' },
     { name: 'MCM', filename: 'mcm.png' },
     { name: 'Betway', filename: 'betway.png' },
     { name: 'Junkyard Tycoon', filename: 'JunkyardTycoon.png' },
     { name: 'HeyCash', filename: 'HeyCash.png' },
-    { name: 'lotum', filename: 'lotum.png' },
+    { name: 'lotum', filename: 'Lotum.png' },
     { name: 'Splash Learn', filename: 'SplashLearn.png' },
     { name: 'Deca', filename: 'Deca.png' }
   ];
