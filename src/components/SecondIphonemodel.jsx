@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 
-const IPhoneModel = ({ videoSrc }) => {
-  const { scene } = useGLTF('/models/iphone15pro.glb');
+const SecondIPhoneModel = ({ videoSrc }) => {
+  // Clone the model to avoid conflicts with the first model
+  const { scene } = useGLTF('/models/iphone15pro.glb', true);
 
   useEffect(() => {
     const video = document.createElement('video');
@@ -72,11 +73,11 @@ const IPhoneModel = ({ videoSrc }) => {
     <group
       scale={27}
       position={[0, 0.2, 0]}
-      rotation={[-0.2, Math.PI - 0.4, 0.1]}
+      rotation={[-0.2, -Math.PI/2, 0.1]}
     >
       <primitive object={scene} />
     </group>
   );
 };
 
-export default IPhoneModel;
+export default SecondIPhoneModel;

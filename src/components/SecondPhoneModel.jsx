@@ -1,15 +1,15 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment } from '@react-three/drei';
-import IPhoneModel from './IPhoneModel';
+import SecondIPhoneModel from './SecondIPhoneModel';
 
-const CustomPhoneModel = () => {
+const SecondPhoneModel = () => {
     
   return (
-    
-        <IPhoneModel videoSrc="/videos/demo (1).mp4"/>
+   
+        <SecondIPhoneModel videoSrc="/videos/demo (1).mp4"/>
       
   );
 };
 
-export default CustomPhoneModel;
+export default SecondPhoneModel;
