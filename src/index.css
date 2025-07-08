@@ -214,7 +214,7 @@ ul li:before {
 /* Hero Section */
 .hero {
     background-color: var(--background);
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     color: var(--white);
 }
 
@@ -233,6 +233,7 @@ ul li:before {
 .hero-content {
     max-width: 560px;
     padding-right: 20px;
+    margin-bottom: 0;
 }
 
 .hero-content h1,
@@ -245,7 +246,8 @@ ul li:before {
 }
 
 .hero-buttons {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .hero .btn-primary {
@@ -278,6 +280,7 @@ ul li:before {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 0;
 }
 
 .playable-3d-model-container {
@@ -483,12 +486,14 @@ canvas {
     width: 100%;
     overflow: hidden;
     padding: 0;
+    margin-top: -20px;
 }
 
 .logo-track {
     display: flex;
     animation: scroll 40s linear infinite;
     width: max-content;
+    margin-top: 0;
 }
 
 @keyframes scroll {

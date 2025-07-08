@@ -84,8 +84,8 @@ const PhoneWithVideo = ({ position, rotation, videoSrc, fromTop = false }) => {
   useFrame(({ clock }) => {
     if (phoneRef.current && visible) {
       // Very subtle floating effect, similar to float-elements CSS
-      const speed = fromTop ? 1.6 : 1.5; // Slower speed for more subtle movement
-      const amplitude = fromTop ? 0.005 : 0.012; // Even smaller amplitude for top phone to prevent cutoff
+      const speed = fromTop ? 1.6 : 1.4; // Slower speed for more subtle movement
+      const amplitude = fromTop ? 0.005 : 0.007; // Even smaller amplitude for top phone to prevent cutoff
       phoneRef.current.position.y = Math.sin(clock.elapsedTime * speed) * amplitude;
     }
   });
