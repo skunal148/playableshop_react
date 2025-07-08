@@ -220,7 +220,7 @@ ul li:before {
 
 @media (max-width: 768px) {
     .hero {
-        padding: 60px 0 40px;
+        padding: 0;
     }
 }
 
@@ -1386,6 +1386,10 @@ footer {
     }
 
     /* Hero Section Mobile */
+    .hero {
+        padding: 0;
+    }
+    
     .hero-container {
         flex-direction: column;
     }
@@ -1431,6 +1435,30 @@ footer {
 
     .hero-buttons .btn-primary {
         background-color: var(--button);
+    }
+
+    /* Updated hero-image styles for mobile */
+    .hero-image {
+        width: 100%;
+        height: 450px; /* Increased height for better visibility */
+        margin: 0;
+        padding: 0;
+        max-width: none;
+        order: -1; /* Ensures it appears before the content in flex layout */
+    }
+    
+    /* Specific styles for the mobile hero image */
+    .mobile-hero-image {
+        height: 450px; /* Increased height for mobile */
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: visible; /* Allow phones to overflow if needed */
+    }
+    
+    /* Adjust the floating elements position in mobile */
+    .mobile-hero-image .floating-elements {
+        z-index: 5; /* Ensure floating elements are above the 3D model */
     }
 
     /* CTA Section Mobile */
