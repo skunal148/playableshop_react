@@ -7,7 +7,7 @@ const SecondPhoneModel = () => {
     
   return (
    
-        <SecondIPhoneModel videoSrc="/videos/demo (1).mp4"/>
+        <SecondIPhoneModel videoSrc="/videos/demo2.mp4"/>
       
   );
 };
